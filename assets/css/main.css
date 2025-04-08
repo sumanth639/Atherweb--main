@@ -3428,6 +3428,8 @@ START: Theme Sponsor CSS
 .about-content .section-heading p {
   max-width: 480px;
   width: 100%;
+  margin-top: 100px;
+  text-align: left;
 }
 .about-content.about-page {
   padding-top: 0;
