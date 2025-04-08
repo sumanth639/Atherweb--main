@@ -425,6 +425,7 @@ ul {
 
 .pt-100 {
   padding-top: 100px;
+  margin-bottom: 32px;
 }
 @media only screen and (max-width: 992px) {
   .pt-100 {
@@ -1487,7 +1488,13 @@ START: Theme Header CSS
 .mobile-side-menu {
   display: none;
 }
-
+.side-menu-list li {
+  margin-left: 15px; /* Add margin to the bottom of each list item */
+}
+.side-menu-list li a {
+  display: inline-block; /* Ensure the anchor tag behaves like a block-level element */
+  margin-left: 5px; /* Add a bit of spacing between the icon and the text */
+}
 @media only screen and (max-width: 992px) {
   .mobile-side-menu {
     background-color: var(--mt-color-common-white);
@@ -7706,6 +7713,34 @@ START: Theme Pricing CSS
 
 .pricing-2 {
   margin-bottom: 0;
+}
+/* Ensure the icons and text are aligned correctly */
+.pricing-item .pricing-list li {
+  font-family: var(--mt-ff-body);
+  font-size: 16px;
+  color: var(--mt-color-text-body);
+  display: flex;
+  align-items: center; /* Align items vertically */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Space between the icon and text */
+.pricing-item .pricing-list li i {
+  margin-right: 15px; /* Increase margin to space out the icon from text */
+}
+
+/* Hover effect for list items */
+.pricing-item:hover .pricing-list li {
+  color: var(--mt-color-common-white);
+}
+
+.pricing-item:hover .pricing-list li:hover {
+  color: var(--mt-color-theme-primary);
+}
+
+/* Adjust padding for the list to ensure consistency in spacing */
+.pricing-item .pricing-list {
+  padding-left: 10px; /* Ensure consistent padding */
 }
 
 /* !END: Theme Pricing CSS */
