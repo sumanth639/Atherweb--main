@@ -943,6 +943,8 @@ START: Theme Header CSS
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  border-radius: 0 0 15px 15px;
 }
 .header .primary-header-inner {
   background-color: var(--mt-color-common-white);
