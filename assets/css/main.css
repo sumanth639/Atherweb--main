@@ -945,6 +945,7 @@ START: Theme Header CSS
   margin: 0 auto;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
   border-radius: 0 0 15px 15px;
+  background-color: #fff;
 }
 .header .primary-header-inner {
   background-color: var(--mt-color-common-white);
@@ -1454,7 +1455,7 @@ START: Theme Header CSS
   box-shadow: 0px 1px 3px 0px rgba(255, 255, 255, 0.1);
 }
 .sticky-header-wrap .header {
-  background-color: var(--mt-color-common-white);
+  background-color: transparent;
   position: relative;
   top: 0;
 }
