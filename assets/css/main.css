@@ -9634,3 +9634,12 @@ body {
     padding: 20px;
   }
 }
+.about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding: 50px 20px;
+}
