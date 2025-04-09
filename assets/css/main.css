@@ -3503,6 +3503,24 @@ START: Theme Sponsor CSS
   font-size: 16px;
   color: var(--mt-color-theme-primary);
 }
+.about-tab .tab-content .about-list li {
+  font-size: 16px;
+  display: flex;
+  align-items: center; /* This aligns icon and text to the same vertical center */
+  column-gap: 10px;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.about-tab .tab-content .about-list li i {
+  font-size: 18px; /* Adjust icon size if needed */
+  flex-shrink: 0; /* Prevent icon from shrinking */
+}
+
+.about-tab .tab-content .about-list li span {
+  text-align: left;
+  display: inline-block;
+}
 
 .about-author {
   display: flex;
