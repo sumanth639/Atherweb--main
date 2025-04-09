@@ -293,7 +293,7 @@
             <!-- Change from col-lg-3 to col-lg-6 -->
             <div
               class="contact-item item-2"
-              style="--mt-color-theme-secondary: #175cff"
+              style="--mt-color-theme-secondary: #ffc330"
             >
               <div class="contact-icon">
                 <i class="fa-sharp fa-solid fa-phone"></i>
@@ -396,12 +396,26 @@
                     <div class="col-sm-6">
                       <input
                         type="text"
-                        id="fullname"
-                        name="fullname"
+                        id="firstname"
+                        name="firstname"
                         class="form-control"
-                        placeholder="Your Name"
+                        placeholder="First Name"
+                        required
                       />
                     </div>
+                    <div class="col-sm-6">
+                      <input
+                        type="text"
+                        id="lastname"
+                        name="lastname"
+                        class="form-control"
+                        placeholder="Last Name"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-group colum-row row">
                     <div class="col-sm-6">
                       <input
                         type="email"
@@ -409,9 +423,21 @@
                         name="email"
                         class="form-control"
                         placeholder="Your Email"
+                        required
+                      />
+                    </div>
+                    <div class="col-sm-6">
+                      <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        class="form-control"
+                        placeholder="Phone Number"
+                        required
                       />
                     </div>
                   </div>
+
                   <div class="form-group row">
                     <div class="col-md-12">
                       <textarea
@@ -421,9 +447,11 @@
                         rows="5"
                         class="form-control address"
                         placeholder="Message"
+                        required
                       ></textarea>
                     </div>
                   </div>
+
                   <button
                     id="submit"
                     class="mt-primary-btn primary-2"
