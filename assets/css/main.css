@@ -8664,7 +8664,7 @@ START: Theme Page Header CSS
     background-position: 0 center;
     height: auto;
     padding: 100px 0;
-    background-image: inherit !important;
+    /* background-image: inherit !important; */
   }
 }
 .page-header .custom-container {
