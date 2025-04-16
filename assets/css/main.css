@@ -8653,10 +8653,12 @@ START: Theme Page Header CSS
   display: flex;
   align-items: center;
   position: relative;
+  background-position: center top;
 }
 @media (max-width: 1700px) {
   .page-header {
     background-position: -150px center;
+    background-position: center top;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -8664,6 +8666,8 @@ START: Theme Page Header CSS
     background-position: 0 center;
     height: auto;
     padding: 100px 0;
+    background-position: center top;
+
     /* background-image: inherit !important; */
   }
 }
@@ -9662,4 +9666,18 @@ body {
   height: 100%;
   text-align: center;
   padding: 50px 20px;
+}
+.hero-join-container {
+  display: flex;
+  justify-content: space-around;
+}
+body
+  > section.hero-section
+  > div.container
+  > div
+  > div
+  > div
+  > div.hero-join-container
+  > div:nth-child(2)
+  > a {
 }
