@@ -277,7 +277,10 @@
     </section>
     <!-- ./ Page Header -->
 
-    <section class="contact-top-area pt-100 pb-100">
+    <section
+      class="contact-top-area pt-100 pb-100"
+      style="background-color: #fff"
+    >
       <div class="container">
         <div class="row gy-4">
           <!--     <div class="col-lg-6 col-md-6">
@@ -369,7 +372,7 @@
           <div class="col-lg-6">
             <div class="contact-info">
               <div class="section-heading">
-                <h4 class="sub-heading bg-white">Our Contact Us</h4>
+                <h4 class="sub-heading bg-white">Join Us</h4>
                 <h2 class="section-title">
                   Have Any Contact! Say The People Trust Us
                 </h2>
@@ -379,64 +382,152 @@
                 </p>
               </div>
               <div class="form-wrap">
-                <form action="" method="post" class="form-horizontal" id="join-form" enctype="multipart/form-data">
-                    <input type="hidden" name="access_key" value="af0b7193-e1ba-42f6-a435-db4fb28a9f4a" />
-                    <input type="hidden" name="website" value="Atherweb.life" />
-                  
-                    <div class="form-group colum-row row">
-                      <div class="col-sm-6">
-                        <input type="text" id="firstname" name="name" class="form-control" placeholder="First Name" required />
-                      </div>
-                      <div class="col-sm-6">
-                        <input type="text" id="lastname" name="name" class="form-control" placeholder="Last Name" required />
-                      </div>
+                <form
+                  action=""
+                  method="post"
+                  class="form-horizontal"
+                  id="join-form"
+                  enctype="multipart/form-data"
+                >
+                  <input
+                    type="hidden"
+                    name="access_key"
+                    value="af0b7193-e1ba-42f6-a435-db4fb28a9f4a"
+                  />
+                  <input type="hidden" name="website" value="Atherweb.life" />
+
+                  <div class="form-group colum-row row">
+                    <div class="col-sm-6">
+                      <input
+                        type="text"
+                        id="firstname"
+                        name="name"
+                        class="form-control"
+                        placeholder="First Name"
+                        required
+                      />
                     </div>
-                  
-                    <div class="form-group colum-row row">
-                      <div class="col-sm-6">
-                        <input type="email" id="email" name="email" class="form-control" placeholder="Your Email" required />
-                      </div>
-                      <div class="col-sm-6">
-                        <input type="tel" id="phone" name="contact" class="form-control" placeholder="Phone Number" required />
-                      </div>
+                    <div class="col-sm-6">
+                      <input
+                        type="text"
+                        id="lastname"
+                        name="name"
+                        class="form-control"
+                        placeholder="Last Name"
+                        required
+                      />
                     </div>
-                  
-                    <!-- Join Us Dropdown -->
-                    <div class="form-group row">
-                      <div class="col-md-12">
-                
-                        <select name="role" id="role" class="form-control  " style="color:#ffffff;" required>
-                          <option value="" disabled selected>Join us as </option>
-                          <option value="intern"style="color:black;">Intern</option>
-                          <option value="trainee"style="color:black;">Trainee</option>
-                          <option value="associate"style="color:black;">Associate</option>
-                          <option value="partner"style="color:black;">Partner</option>
-                        </select>
-                      </div>
-                    </div>
-                  
-                    <!-- Upload Resume -->
-                    <div class="form-group row">
-                      <div class="col-md-12">
-                        <label for="resume" style="font-weight: 600; margin-bottom: 6px; color: #ffffff;">Upload Resume</label>
-                        <input type="file" id="resume" name="resume" class="form-control" accept=".pdf,.doc,.docx" required />
-                      </div>
-                    </div>
-                  
-                    <div class="form-group row">
-                      <div class="col-md-12">
-                        <textarea id="message" name="message" cols="30" rows="3" class="form-control address" placeholder="Message" required></textarea>
-                      </div>
-                    </div>
-                  
-                    <button id="submit" class="mt-primary-btn primary-2" type="submit">
-                      Send message
-                    </button>
-                  </form>
-                  <div id="successAlert" style="display: none; padding: 12px; margin-top: 15px; border-radius: 6px; background-color: #d4edda; color: #155724; border: 1px solid #c3e6cb;">
-                    Your message has been sent successfully!
                   </div>
-                  
+
+                  <div class="form-group colum-row row">
+                    <div class="col-sm-6">
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        class="form-control"
+                        placeholder="Your Email"
+                        required
+                      />
+                    </div>
+                    <div class="col-sm-6">
+                      <input
+                        type="tel"
+                        id="phone"
+                        name="contact"
+                        class="form-control"
+                        placeholder="Phone Number"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <!-- Join Us Dropdown -->
+                  <div class="form-group row">
+                    <div class="col-md-12">
+                      <select
+                        name="role"
+                        id="role"
+                        class="form-control"
+                        style="color: #ffffff"
+                        required
+                      >
+                        <option value="" disabled selected>Join us as</option>
+                        <option value="intern" style="color: black">
+                          Intern
+                        </option>
+                        <option value="trainee" style="color: black">
+                          Trainee
+                        </option>
+                        <option value="associate" style="color: black">
+                          Associate
+                        </option>
+                        <option value="partner" style="color: black">
+                          Partner
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <!-- Upload Resume -->
+                  <div class="form-group row">
+                    <div class="col-md-12">
+                      <label
+                        for="resume"
+                        style="
+                          font-weight: 600;
+                          margin-bottom: 6px;
+                          color: #ffffff;
+                        "
+                        >Upload Resume</label
+                      >
+                      <input
+                        type="file"
+                        id="resume"
+                        name="resume"
+                        class="form-control"
+                        accept=".pdf,.doc,.docx"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <div class="col-md-12">
+                      <textarea
+                        id="message"
+                        name="message"
+                        cols="30"
+                        rows="3"
+                        class="form-control address"
+                        placeholder="Message"
+                        required
+                      ></textarea>
+                    </div>
+                  </div>
+
+                  <button
+                    id="submit"
+                    class="mt-primary-btn primary-2"
+                    type="submit"
+                  >
+                    Send message
+                  </button>
+                </form>
+                <div
+                  id="successAlert"
+                  style="
+                    display: none;
+                    padding: 12px;
+                    margin-top: 15px;
+                    border-radius: 6px;
+                    background-color: #d4edda;
+                    color: #155724;
+                    border: 1px solid #c3e6cb;
+                  "
+                >
+                  Your message has been sent successfully!
+                </div>
               </div>
             </div>
           </div>
@@ -501,14 +592,6 @@
       <div class="overlay"></div>
       <div class="container">
         <div class="footer-top">
-          <div class="footer-logo">
-            <a href="#"
-              ><img
-                src="assets/img/logo/logo.png"
-                alt="logo"
-                style="height: 120px; width: 200px"
-            /></a>
-          </div>
           <div class="footer-form-wrap">
             <h3 class="news">
               Our Newsletter <span>Stay Ahead of the Curve!</span>
@@ -585,16 +668,18 @@
           </div>
         </div>
       </div>
-      <div style="background-color: #1a1a1a; padding: 48px 0; text-align: center;">
-        <p style="color: #ffffff; margin: 0; font-size: 14px;">
+      <div
+        style="background-color: #1a1a1a; padding: 48px 0; text-align: center"
+      >
+        <p style="color: #ffffff; margin: 0; font-size: 14px">
           Copyright © 2025
           <a
             href="https://aetherweb.life"
             target="_blank"
-            style="color: #82a25b; text-decoration: none; font-weight: 500;"
+            style="color: #82a25b; text-decoration: none; font-weight: 500"
           >
-            Aetherweb Technologies
-          </a>. All rights reserved.
+            Aetherweb Technologies </a
+          >. All rights reserved.
         </p>
       </div>
     </footer>
@@ -607,59 +692,60 @@
     </div>
     <!--scrollup-->
 
+    <!-- Join handling -->
 
-<!-- Join handling -->
+    <script>
+      document
+        .getElementById('join-form')
+        .addEventListener('submit', async function (event) {
+          event.preventDefault();
 
-<script>
-    document.getElementById("join-form").addEventListener("submit", async function (event) {
-     event.preventDefault();
+          const formElem = this;
+          const formData = new FormData(formElem);
+          console.log(formData.role);
+          const successAlert = document.getElementById('successAlert');
+          const buttonElem = formElem.querySelector('#submit');
 
-    
+          try {
+            buttonElem.textContent = 'Sending Message...';
 
+            const response = await fetch(
+              ' https://backend-for-ptwo.onrender.com/joinus',
+              {
+                method: 'POST',
+                body: formData,
+              }
+            );
 
- 
-     const formElem = this;
-     const formData = new FormData(formElem);
-     console.log(formData.role);
-     const successAlert = document.getElementById("successAlert");
-     const buttonElem = formElem.querySelector("#submit");
- 
-     try {
-       buttonElem.textContent = "Sending Message...";
- 
-       const response = await fetch(" https://backend-for-ptwo.onrender.com/joinus", {
-         method: "POST",
-         body: formData
-       });
- 
-       const result = await response.json();
- 
-       if (response.ok) {
-         successAlert.innerText = result.message || "Your response has been noted!";
-         successAlert.style.color = "#a36e24"; 
-         successAlert.style.display = "block";
- 
-         formElem.reset();
-         buttonElem.textContent = "Send Message";
- 
-         setTimeout(() => {
-           successAlert.style.display = "none";
-         }, 3000);
-       } else {
-         throw new Error(result.error || "Submission failed");
-       }
-     } catch (error) {
-       successAlert.innerText = error.message;
-       successAlert.style.color = "#f44336";
-       successAlert.style.display = "block";
- 
-       setTimeout(() => {
-         successAlert.style.display = "none";
-       }, 5000);
-     }
-   });
-</script>
-<!-- form handling ends -->
+            const result = await response.json();
+
+            if (response.ok) {
+              successAlert.innerText =
+                result.message || 'Your response has been noted!';
+              successAlert.style.color = '#a36e24';
+              successAlert.style.display = 'block';
+
+              formElem.reset();
+              buttonElem.textContent = 'Send Message';
+
+              setTimeout(() => {
+                successAlert.style.display = 'none';
+              }, 3000);
+            } else {
+              throw new Error(result.error || 'Submission failed');
+            }
+          } catch (error) {
+            successAlert.innerText = error.message;
+            successAlert.style.color = '#f44336';
+            successAlert.style.display = 'block';
+
+            setTimeout(() => {
+              successAlert.style.display = 'none';
+            }, 5000);
+          }
+        });
+    </script>
+    <!-- form handling ends -->
 
     <!-- JS here -->
     <script src="assets/js/vendor/jquary-3.6.0.min.js"></script>
